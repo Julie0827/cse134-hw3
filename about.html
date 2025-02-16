@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Julie</title>
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+    <style>        
+        th, td {
+            border: 1px solid black;
+        }
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <noscript>
+        <p>JavaScript is disabled. Please enable it for the best experience!</p>
+    </noscript>
+    <header>
+        <a href="index.html">
+            <img src="assets/logo.png" alt="Logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <audio controls>
+            <source src="assets/background_audio.mp3" type="audio/mp3">
+            Sorry, your browswer doesn't support this audio.
+        </audio>
+        <search>
+            <input type="text" id="searchBox" placeholder="Search...">
+            <button type="submit">🔍</button>
+        </search>
+    </header>
+    <main>
+        <h1>About Me</h1>
+        <h2>My Story, My Passion</h2>
+
+        <img id="profile" src="assets/profile.jpg" alt="Profile Photo">
+
+        <h3>Biography</h3>
+        <p>Hi, I'm Julie! I'm a fourth-year Computer Science student at UC San Diego. I love learning new things, especially when it comes to tech. Some of my favorite classes so far have been <strong>Operating Systems</strong> and <strong>Computer Networks</strong>, and lately, I’ve been diving deeper into OS in my free time.</p>
+        <p>Outside of school, I love reading sci-fi books, and <cite>Ready Player One</cite> is one of my all-time favorites. I also love animals—I have a puppy, and she means <em>the world</em> to me!</p>
+        <p>I really enjoy studying on campus with my friends, and we always end up at <strong>Franklin Antonio Hall</strong>, our favorite spot. I'm also part of the <strong>Competitive Programming Club</strong>, where I help out as the Marketing Director. Our club competes in the <abbr title="International Collegiate Programming Contest">ICPC</abbr> and helps students improve problem-solving and algorithmic thinking.</p>
+        <p>As for my career path, I’m still figuring things out, but for now, I’m just enjoying learning, coding, and spending time with the people I love.</p>
+        <aside>
+            <p>Here’s one of my favorite quotes:</p>
+            <blockquote>
+                "Everything should be made as simple as possible, but not simpler."
+                <cite>— Albert Einstein</cite>
+            </blockquote>
+        </aside>
+        <details>
+            <summary>More About My Background</summary>
+            <p>I’m originally from South Korea, and my journey to studying in the U.S. has taken me through a few different places. I spent a few months in New York before moving to California, where I lived in Pleasant Hill in the Bay Area for three years. Eventually, I made my way to San Diego to attend UCSD. I’ve loved all the cities I’ve lived in, but San Diego has been my favorite.</p>
+        </details>
+
+        <hr>
+        <h3>Skills</h3>
+        <p>I'm comfortable working with <span class="cpp programming"><strong>C++</strong></span>, <span class="java programming"><strong>Java</strong></span>, <span class="python programming"><strong>Python</strong></span>, and <span class="c programming"><strong>C</strong></span>, and I also have experience with <span class="programming"><strong>HTML</strong></span>, <span class="programming"><strong>CSS</strong></span>, and <span class="programming"><strong>JavaScript</strong></span>, though I'm still improving my web development skills. I’ve worked with <strong>Pandas</strong>, <strong>NumPy</strong>, and <strong>Scikit-Learn</strong>, along with <strong>YOLOv8</strong> and <strong>PyTorch</strong> for machine learning tasks. I’ve also learned <strong>Docker</strong> for containerization and have experience working in <strong>Linux</strong> and <strong>macOS</strong> environments. In addition, I have some experience with <strong>x86 Assembly</strong> and an understanding of <strong>operating systems concepts</strong> like process management and memory allocation.</p>
+        
+        <hr>
+        <h3>Experience</h3>
+        <p>As a <strong>Research Assistant</strong> for the <strong>Avocado Computer Vision Project</strong> at <strong>UC San Diego</strong> (Aug 2024 – Present), I have contributed to improving avocado tree detectionin images using YOLOv8 for precision agriculture applications. My work involves preparing datasets in a YOLO-compatible format, ensuring proper data cleaning and directory structuring. Additionally, I have trained and evaluated YOLOv8 models with different configurations to optimize recall and precision.</p>
+        
+        <hr>
+        <h3>Job Preferences</h3>
+        <p>I haven't decided on a specific career path yet, but I see every opportunity as a chance to learn and grow. I'm particularly interested in <strong>systems-related roles</strong>, such as <strong>operating systems</strong> and <strong>computer networks</strong>, but I’m also open to working in <strong>backend or frontend development</strong>. I currently live in <strong>San Diego</strong>, so I’d prefer opportunities in the area, but I’m also open to <strong>remote positions</strong>.</p>
+
+        <hr>
+        <section id="experiments">
+            <hgroup>
+                <h2>Experiments</h2>
+                <p>Welcome to the Experiments section!</p>
+                <p>This part of the site is separate from my portfolio and is meant for testing HTML tags that don’t naturally fit elsewhere. <strong>The goal is to explore different elements as part of Homework 2.</strong> Thanks for stopping by!</p>
+            </hgroup>
+
+            <div id="experimentContainer">
+                <p>If you’re using a Mac, you can press <kbd>Cmd</kbd> + <kbd>Option</kbd> + <kbd>I</kbd> to open the <abbr title="Developer Tools">DevTools</abbr> in your browser and look at the source code of this website!</p>
+
+                <p>Here’s my schedule for the next three quarters, displayed using an HTML table.</p>
+                <table>
+                    <caption>My Last 3 Quarters Schedule</caption>
+                    <colgroup>
+                        <col class="course">
+                        <col class="category">
+                        <col class="units">
+                        <col class="course">
+                        <col class="category">
+                        <col class="units">
+                        <col class="course">
+                        <col class="category">
+                        <col class="units">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th colspan="3">Spring 2025</th>
+                            <th colspan="3">Fall 2025</th>
+                            <th colspan="3">Winter 2026</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CSE 125</td>
+                            <td>Major</td>
+                            <td>4</td>
+                            <td>MMW 121</td>
+                            <td>GE</td>
+                            <td>4</td>
+                            <td>MMW 122</td>
+                            <td>GE</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>CSE 127</td>
+                            <td>Major</td>
+                            <td>4</td>
+                            <td>CSE 105</td>
+                            <td>Major</td>
+                            <td>4</td>
+                            <td>CSE 160</td>
+                            <td>Major</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>CSE 168</td>
+                            <td>Major</td>
+                            <td>4</td>
+                            <td>CSE 140</td>
+                            <td>Major</td>
+                            <td>4</td>
+                            <td>HIEU 147</td>
+                            <td>GE</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"></td>
+                            <td>HIEU 128</td>
+                            <td>GE</td>
+                            <td>4</td>
+                            <td colspan="3"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><strong>Unit Total:</strong></td>
+                            <td><strong>12</strong></td>
+                            <td colspan="2"><strong>Unit Total:</strong></td>
+                            <td><strong>16</strong></td>
+                            <td colspan="2"><strong>Unit Total:</strong></td>
+                            <td><strong>12</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>Hi, my name is <del>Joohee</del> <ins>Julie</ins> Hong, and I live in <del>Pleasant Hill</del> <ins>San Diego</ins>!</p>
+                
+                <p>Here are my top three favorite foods that always make me happy:</p>
+                <ol>
+                    <li>Avocado</li>
+                    <li>Chocolate</li>
+                    <li>Boba</li>
+                </ol>
+
+                <form action="https://formspree.io/f/myzkjbea" method="POST">
+                    <label for="food">What is your favorite food?</label>
+                    <select id="food" name="food">
+                        <option value="" disabled selected>Select your favorite food</option>
+                        <optgroup label="Main Dishes">
+                            <option value="Pizza">Pizza</option>
+                            <option value="Burgers">Burgers</option>
+                            <option value="Sushi">Sushi</option>
+                            <option value="Pasta">Pasta</option>
+                            <option value="Chicken">Chicken</option>
+                            <option value="Kbbq">Kbbq</option>
+                        </optgroup>
+                        <optgroup label="Desserts">    
+                            <option value="Ice Cream">Ice Cream</option>
+                            <option value="Donuts">Donuts</option>
+                            <option value="Macaron">Macaron</option>
+                            <option value="Cake">Cake</option>
+                        </optgroup>
+                    </select>
+                    <br>
+                    <label for="animal">What is your favorite animal?</label>
+                    <input list="animals" id="animal" name="animal" placeholder="Choose an animal">
+                    <datalist id="animals">
+                        <option value="Dog">
+                        <option value="Cat">
+                        <option value="Elephant">
+                        <option value="Lion">
+                        <option value="Tiger">
+                        <option value="Giraffe">
+                        <option value="Panda">
+                        <option value="Koala">
+                        <option value="Horse">
+                        <option value="Rabbit">
+                    </datalist>
+                    <br>
+                    <button type="submit">Submit</button>
+                </form>
+
+                <p>My professor mentioned that these tags are purely presentational, so for semantic purposes, we should use &lt;strong&gt; and &lt;em&gt; instead.</p>
+                <p>Now, here’s an example of <b>bold</b> and <i>italic</i> text using &lt;b&gt; and &lt;i&gt;!</p>
+
+                <p>I plan to include code snippets on my project page as part of my demonstration, but since I’m still working on my website and haven’t decided what to add yet, I’ll use this space to practice the &lt;code&gt; tag. I’m sure it’ll be useful!</p>
+                <pre>
+                    <code>
+                        #include &lt;iostream&gt;
+                        using namespace std;
+
+                        int main() {
+                            count &lt;&lt; "Hello World!";
+                            return 0;
+                        }
+                    </code>
+                </pre>
+                
+                <p>I want to share a pohto of my puppy because she brings me so much joy!</p>
+                <figure>
+                    <img src="assets/my_puppy.jpg" alt="My puppy in a pink t-shirt">
+                    <figcaption>Here's my puppy! She's the cutest, and I love her so much.</figcaption>
+                </figure>
+
+                <p>Here’s another photo of my puppy, but this time, I used the &lt;picture&gt; tag to display it in three different sizes based on the screen width.</p>
+                <picture>
+                    <source srcset="assets/puppy-large.png" media="(min-width: 1000px)">
+                    <source srcset="assets/puppy-medium.png" media="(min-width: 600px)">
+                    <img src="assets/puppy-small.png" alt="My puppy in a pink sweater">
+                </picture>
+
+                <p>Here are some key terms I learned in my CSE 120 Operating Systems class:</p>
+                <dl>
+                    <dt>Paging</dt>
+                    <dd>A way for the OS to manage memory by dividing it into fixed-size pages.</dd>
+                    
+                    <dt>Condition Variable</dt>
+                    <dd>A tool used in multithreading to help threads wait for a condition before continuing.</dd>
+                </dl>
+                <p>One key concept I learned in my OS class is <dfn>multithreading</dfn>, which allows a program to run multiple tasks at the same time, improving performance and efficiency.</p>
+
+                <p>Here’s a simple canvas.</p>
+                <canvas id="myCanvas"></canvas>
+
+                <p>Here's a simple vector graphic I created using SVG.</p>
+                <svg>
+                    <circle cx="100" cy="50" r="30" stroke="black" />
+                </svg>
+
+                <h3>Extra Credit</h3>
+                <math>
+                    <mi>E</mi>
+                    <mo>=</mo>
+                    <mi>m</mi>
+                    <mo>&InvisibleTimes;</mo>
+                    <msup>
+                        <mi>c</mi>
+                        <mn>2</mn>
+                    </msup>
+                </math>
+                <p>According to CanIUse.com, MathML has only recently become widely supported across major browsers. More specifically, this feature has been available on the latest devices and major browser versions since January 2023. Although MathML has been part of the HTML specification for a long time, developers were unable to fully utilize it until recently due to poor browser support.</p>
+
+                <template id="projectTemplate">
+                    <h3>Project Title</h3>
+                    <img src="assets/default.png" alt="Project Thumbnail">
+                    <p>Description of the project goes here.</p>
+                    <a href="https://github.com/Julie0827/cse134-hw2" target="_blank">GitHub Repository</a>
+                </template>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="https://github.com/Julie0827" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/julie-hong-065579298/" target="_blank">LinkedIn</a></li>
+            <li><a href="mailto:joh046@ucsd.edu" target="_blank">joh046@ucsd.edu</a></li>
+        </ul>
+    </footer>
+
+    <dialog id="myDialog">
+        <p>Thank you for reading my page!</p>
+        <button id="closeBtn">Close</button>
+    </dialog>
+
+    <script>
+        let canvas = document.getElementById("myCanvas");
+        let ctx = canvas.getContext("2d");
+
+        ctx.fillStyle = "black";
+        ctx.fillRect(100, 50, 100, 50);
+    </script>
+</body>
+</html>
