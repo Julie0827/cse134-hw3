@@ -3,50 +3,82 @@
 
 :root {
     --background-color: #faf7fa;
+    --main-color: #f09da8;
     --font-size-base: 16px;
     --font-primary: 'Karla';
-    --text-primary-color: #202020; 
+    --font-input: 'Indie Flower';
+    --text-primary-color: #202020;
 }
 
 body {
-    background-color: var(--background-color, #faf7fa);
+    background-color: var(--background-color, white);
     font-size:  var(--font-size-base, 16px);
     font-family: var(--font-primary, Arial, sans-serif);
-    color: var(--text-primary-color, #202020);
+    color: var(--text-primary-color, black);
+    padding: 2rem;
 }
 
 #logo {
-    width: 5em;
+    width: 8vw;
 }
 
 header {
     display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+header audio {
+    align-self: flex-end;
+}
+
+header nav {
+    display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    align-items: center;
 }
 
-header nav ul {
-    display: flex;
-    flex-flow: row nowrap;
-    list-style: none;
-    gap: 2em;
-}
-
-header nav ul li {
-    display: flex;
-}
-
-header nav ul li a {
+header nav a.nav-link {
     text-decoration: none;
-    padding: 0.3em 
+    padding: 0.7em 1em;
 }
 
-header nav ul li a:hover {
-    text-decoration: underline;
+header nav a.nav-link:hover {
+    background-color: white;
+    border-radius: 10em;
 }
 
-header nav ul li a:visited {
+header nav a.nav-link:visited {
     color: inherit;
+}
+
+header nav a.nav-link:active {
+    transform: scale(0.9);
+}
+
+header search input {
+    width: 20vw;
+    height: 2.5rem;
+    padding: 0.1em 3em 0.1em 1em;
+    border: 2px solid var(--main-color, pink);
+    border-radius: 50px;
+    background: url('../assets/search.png') no-repeat right 1em center;
+    background-size: 1.5em;
+}
+
+input {
+    box-sizing: border-box;
+    font-family: 'Indie Flower', 'Comic Sans MS', cursive;
+    font-size: 1em;
+    color: var(--font-primary, black);
+    outline: none;
+}
+
+input:focus {
+    border-width: 3px;
+    background: url('../assets/search-active.png') no-repeat right 1em center;
+    background-size: 1.3em;
 }
 
 footer ul {
