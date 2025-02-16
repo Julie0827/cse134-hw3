@@ -48,16 +48,29 @@
                 <p>I'm a fourth-year Computer Science student at UC San Diego, and this website is my portfolio. Here, you can learn more about me on the About Me page, explore my work on the Projects page, view and download my resume on the Resume page, and find my contact details on the Contact page. I hope you find this website helpful in getting to know me better. Thanks again for visiting!</p>
             </hgroup>
             <div id="main-page-image-container">
-                <img id="main-img" src="assets/homepage-intro.png" alt="3D illustration of a girl using a laptop on a fluffy cloud">
+                <picture id="main-img">
+                    <source srcset="assets/homepage-intro-large.png" media="(min-width: 1200px)">
+                    <source srcset="assets/homepage-intro-medium.png" media="(min-width: 768px)">
+                    <img src="assets/homepage-intro-small.png" alt="3D illustration of a girl using a laptop on a fluffy cloud">
+                </picture>
                 <img class="sub-img top-left" src="assets/heart.png" alt="3D illustration of a red heart">
                 <img class="sub-img top-right" src="assets/books.png" alt="3D illustration of three books">
                 <img class="sub-img bottom-left" src="assets/ice-cream.png" alt="3D illustration of an ice cream cone with three scoops">
                 <img class="sub-img bottom-right" src="assets/gamepad.png" alt="3D illustration of a yellow game controller">
             </div>
         </div>
-        <div id="project-thumbnail-container">
-            <img src="assets/project_thumbnail.png" alt="Project 1 Thumbnail">
-            <img src="assets/project_thumbnail.png" alt="Project 2 Thumbnail">
+        <div id="project-thumbnail-container">            
+            <picture>
+                <source srcset="assets/project-thumbnail-large.png" media="(min-width: 1200px)">
+                <source srcset="assets/project-thumbnail-medium.png" media="(min-width: 768px)">
+                <img src="assets/project-thumbnail-small.png" alt="Project Thumbnail">
+            </picture>
+
+            <picture>
+                <source srcset="assets/project-thumbnail-large.png" media="(min-width: 1200px)">
+                <source srcset="assets/project-thumbnail-medium.png" media="(min-width: 768px)">
+                <img src="assets/project-thumbnail-small.png" alt="Project Thumbnail">
+            </picture>
         </div>
         <button type="button" class="btn">View Projects</button>
     </main>

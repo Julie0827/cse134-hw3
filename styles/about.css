@@ -2,6 +2,10 @@
 
 #profile {
     width: 30%;
+}
+
+#profile img {
+    width: 100%;
     border-radius: 20em;
 }
 

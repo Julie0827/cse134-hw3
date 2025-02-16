@@ -38,7 +38,12 @@
         </hgroup>
 
         <div id="profile-container">
-            <img id="profile" src="assets/profile.jpg" alt="Profile Photo">
+            <picture id="profile">
+                <source srcset="assets/profile-large.jpg" media="(min-width: 1200px)">
+                <source srcset="assets/profile-medium.jpg" media="(min-width: 768px)">
+                <img src="assets/profile-small.jpg" alt="Profile Photo">
+            </picture>
+
             <hgroup id="bio">
                 <h3>Biography</h3>
                 <p>Hi, I'm Julie! I'm a fourth-year Computer Science student at UC San Diego. I love learning new things, especially when it comes to tech. Some of my favorite classes so far have been <strong>Operating Systems</strong> and <strong>Computer Networks</strong>, and lately, I’ve been diving deeper into OS in my free time.</p>

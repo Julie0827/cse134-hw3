@@ -15,7 +15,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 #main-page-intro-container hgroup {
@@ -32,6 +31,10 @@
 
 #main-img {
     width: 80%;
+}
+
+#main-img img {
+    width: 100%;
     animation: bounce 2s linear infinite;
 }
 
@@ -71,8 +74,12 @@
     align-items: center;
 }
 
-#project-thumbnail-container img {
+#project-thumbnail-container picture {
     width: 40%;
+}
+
+#project-thumbnail-container picture img {
+    width: 100%;
     border-radius: 3em;
     box-shadow: var(--shadow-card, none);
 }
