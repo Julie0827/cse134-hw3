@@ -15,83 +15,8 @@
     <title>Julie</title>
     <link rel="icon" href="assets/favicon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <style>        
-        my-status {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 8px 14px;
-            border-radius: 100px;
-            font-family:'Poppins', sans-serif;
-            letter-spacing: 0.5px;
-            font-size: 0.95rem;
-            font-weight: bold;
-            color: #202020;
-            text-transform: capitalize;
-            gap: 10px;
-            margin: 3px;
-        }
-
-        my-status[data-status="looking"] {
-            background-color: #cef5c6
-        }
-
-        my-status[data-status="open"] {
-            background-color: #f7e1f7;
-        }
-
-        my-status[data-status="freelance"] {
-            background-color: #ffeebf;
-        }
-
-        my-status[data-status="collab"] {
-            background-color: #c8f7f7;
-        }
-        
-        my-status[data-status="looking"]::before {
-            content: "";
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-            background-image: url("assets/looking.png");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-
-        my-status[data-status="open"]::before {
-            content: "";
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-            background-image: url("assets/open.png");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-
-        my-status[data-status="freelance"]::before {
-            content: "";
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-            background-image: url("assets/freelance.png");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-
-        my-status[data-status="collab"]::before {
-            content: "";
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-            background-image: url("assets/collab.png");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/style.css" media="screen" type="text/css">
+    <link rel="stylesheet" href="styles/home.css" media="screen" type="text/css">
 </head>
 <body>
     <noscript>
@@ -99,7 +24,7 @@
     </noscript>
     <header>
         <a href="index.html">
-            <img src="assets/logo.png" alt="Logo">
+            <img id="logo" src="assets/logo.png" alt="Logo">
         </a>
         <nav>
             <ul>
@@ -118,16 +43,21 @@
             <input type="text" id="searchBox" placeholder="Search...">
             <button type="submit">🔍</button>
         </search>
-        <my-status data-status="looking">Looking for a job</my-status>
+        <!-- <my-status data-status="looking">Looking for a job</my-status>
         <my-status data-status="open">Open to offers</my-status>
         <my-status data-status="freelance">Freelance available</my-status>
-        <my-status data-status="collab">Open to collaborations</my-status>
+        <my-status data-status="collab">Open to collaborations</my-status> -->
     </header>
     <main>
+        <div id="main-page-image-container">
+            <img id="main-img" src="assets/homepage-intro.png" alt="3D illustration of a girl using a laptop on a fluffy cloud">
+            <img class="sub-img top-left" src="assets/heart.png" alt="3D illustration of a red heart">
+            <img class="sub-img top-right" src="assets/books.png" alt="3D illustration of three books">
+            <img class="sub-img bottom-left" src="assets/ice-cream.png" alt="3D illustration of an ice cream cone with three scoops">
+            <img class="sub-img bottom-right" src="assets/gamepad.png" alt="3D illustration of a yellow game controller">
+        </div>
         <h1>Hi, I'm Julie! Glad to Have You Here.</h1>
         <p>I'm a fourth-year Computer Science student at UC San Diego, and this website is my portfolio. Here, you can learn more about me on the About Me page, explore my work on the Projects page, view and download my resume on the Resume page, and find my contact details on the Contact page. I hope you find this website helpful in getting to know me better. Thanks again for visiting!</p>
-        
-        <hello-world></hello-world>
 
         <img src="assets/project_thumbnail.png" alt="Project 1 Thumbnail">
         <img src="assets/project_thumbnail.png" alt="Project 2 Thumbnail">

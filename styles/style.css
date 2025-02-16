@@ -1,0 +1,143 @@
+@import url("animations.css");
+@import url("font.css");
+
+:root {
+    --background-color: #faf7fa;
+    --font-size-base: 16px;
+    --font-primary: 'Karla';
+    --text-primary-color: #202020; 
+}
+
+body {
+    background-color: var(--background-color, #faf7fa);
+    font-size:  var(--font-size-base, 16px);
+    font-family: var(--font-primary, Arial, sans-serif);
+    color: var(--text-primary-color, #202020);
+}
+
+#logo {
+    width: 5em;
+}
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+header nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+    gap: 2em;
+}
+
+header nav ul li {
+    display: flex;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    padding: 0.3em 
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+header nav ul li a:visited {
+    color: inherit;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-flow: row nowrap;
+    list-style: none;
+    gap: 2em;
+}
+
+footer ul li a {
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.5;
+}
+
+my-status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 14px;
+    border-radius: 100px;
+    font-family:'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #202020;
+    text-transform: capitalize;
+    gap: 10px;
+    margin: 3px;
+}
+
+my-status[data-status="looking"] {
+    background-color: #cef5c6
+}
+
+my-status[data-status="open"] {
+    background-color: #f7e1f7;
+}
+
+my-status[data-status="freelance"] {
+    background-color: #ffeebf;
+}
+
+my-status[data-status="collab"] {
+    background-color: #c8f7f7;
+}
+
+my-status[data-status="looking"]::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url("../assets/looking.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+my-status[data-status="open"]::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url("../assets/open.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+my-status[data-status="freelance"]::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url("../assets/freelance.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+my-status[data-status="collab"]::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url("../assets/collab.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
