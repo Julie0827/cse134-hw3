@@ -1,1 +1,29 @@
 @import url("variables.css");
+
+#profile {
+    width: 30%;
+    border-radius: 20em;
+}
+
+#about-me-container h3 {
+    color: var(--main-color, pink);
+    font-size: 1.5em;
+}
+
+#about-me-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 3em;
+}
+
+#profile-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bio {
+    width: 60%;
+}
+
