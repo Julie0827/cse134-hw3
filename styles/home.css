@@ -1,5 +1,9 @@
 @import url("variables.css");
 
+#my-name {
+    color: var(--main-color, pink);
+}
+
 #main-page-container {
     display: flex;
     flex-direction: column;

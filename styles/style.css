@@ -121,18 +121,18 @@ p {
     line-height: 1.5;
 }
 
-button {
+button, .top-btn {
     font-family: var(--font-button, 'Arial', sans-serif);
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
 }
 
-button:hover {
+button:hover, .top-btn:hover, .repo-btn:hover {
     transform: scale(1.05);
 }
 
-button:active {
+button:active, .top-btn:active, .repo-btn:active {
     transform: scale(0.95);
 }
 
