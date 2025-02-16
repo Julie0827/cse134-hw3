@@ -1,1 +1,32 @@
 @import url("variables.css");
+
+#projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+#projects-container nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-flow: row nowrap;
+    list-style: none;
+    gap: 2em;
+}
+
+#projects-container nav ul li a {
+    text-decoration: none;
+}
+
+.project h2 {
+    color: var(--main-color, pink);
+}
+
+.project img {
+    width: 30%;
+}
+
+.project video {
+    width: 30%;
+}

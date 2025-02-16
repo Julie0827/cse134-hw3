@@ -1,5 +1,18 @@
 @import url("variables.css");
 
+#resume-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+}
+
+#resume-container hgroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 iframe {
     width: 100%;
     height: 500px;
