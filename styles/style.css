@@ -1,15 +1,6 @@
 @import url("animations.css");
 @import url("font.css");
-
-:root {
-    --background-color: #faf7fa;
-    --main-color: #f09da8;
-    --secondary-color: #d39df0;
-    --font-size-base: 16px;
-    --font-primary: 'Karla';
-    --font-input: 'Indie Flower';
-    --text-primary-color: #202020;
-}
+@import url("variables.css");
 
 body {
     display: flex;
@@ -24,8 +15,21 @@ body {
     word-spacing: 0.2em;
 }
 
+main {
+    padding: 2vw;
+}
+
 #logo {
     width: 8vw;
+    transition: transform 0.2s ease-in-out;
+}
+
+#logo:hover {
+    transform: scale(1.1);
+}
+
+#logo:active {
+    transform: scale(0.9);
 }
 
 header {
@@ -65,8 +69,8 @@ header nav a.nav-link:active {
 
 header search input {
     width: 20vw;
-    height: 2.5rem;
-    padding: 0.1em 3em 0.1em 1em;
+    height: 2.8rem;
+    padding: 0.2em 3em 0.2em 1.2em;
     border: 2px solid var(--main-color, pink);
     border-radius: 50px;
     background: url('../assets/search.png') no-repeat right 1em center;
