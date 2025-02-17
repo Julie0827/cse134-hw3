@@ -23,7 +23,7 @@
         <p>JavaScript is disabled. Please enable it for the best experience!</p>
     </noscript>
     <header>
-        <nav>
+        <nav id="main-nav">
             <a href="index.html">
                 <img id="logo" src="assets/logo.png" alt="Logo">
             </a>
@@ -35,7 +35,22 @@
             <search>
                 <input type="text" placeholder="Search...">
             </search>
-            <img id="hamburger-icon" src="assets/menu.svg" alt="Dropdown menu icon">
+            <nav id="dropdown-nav">
+                <input type="checkbox" id="toggle">
+            
+                <label for="toggle" class="menu-icon">
+                    <img src="assets/hamburger.svg" alt="Menu Icon" class="hamburger-icon">
+                    <img src="assets/x.svg" alt="Close Icon" class="close-icon">
+                </label>
+    
+                <ul id="dropdown-menu">
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="about.html">About Me</a></li>
+                    <li><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li><a class="nav-link" href="resume.html">Resume</a></li>
+                    <li><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </nav>
         <audio controls>
             <source src="assets/background_audio.mp3" type="audio/mp3">

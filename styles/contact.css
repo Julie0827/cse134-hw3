@@ -108,9 +108,9 @@ my-contact[data-contact="email"] {
     }
 
     my-contact {
-        width: 60%;
+        width: 80%;
         font-size: 0.7em;
-        justify-content: space-evenly;
+        justify-content: center;
     }
 
     my-contact a {
