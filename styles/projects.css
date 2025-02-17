@@ -8,11 +8,11 @@
 }
 
 #projects-container nav ul {
+    padding: 0;
     display: flex;
     justify-content: center;
     list-style: none;
     flex-flow: row nowrap;
-    list-style: none;
     gap: 4em;
 }
 
@@ -99,4 +99,63 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+@media (max-width: 600px) {
+    #projects-container nav ul {
+        gap: 1em;
+    }
+
+    .project-info {
+        flex-direction: column;
+    }
+
+    #projects-container h2 {
+        font-size: 1.5em;
+    }
+
+    .repo-btn {
+        align-self: flex-end;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: var(--text-primary-color, black);
+        padding: 3px 8px;
+        text-decoration: none;
+        background-color: white;
+        border-radius: 50px;
+        box-shadow: var(--shadow-button, none);
+        font-size: 10px
+    }
+
+    .repo-btn::before {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url("../assets/github-cat.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .project picture img {
+        width: 80%;
+    }
+    
+    .project video {
+        width: 80%;
+    }
+
+    .project {
+        gap: 1em;
+    }
+
+    #projects {
+        gap: 6em;
+    }
+
+    #projects-container {
+        gap: 2em;
+    }
 }
