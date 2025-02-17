@@ -61,6 +61,10 @@ my-contact[data-contact="email"] {
     background-color: #faedac;
 }
 
+#contact-container h2 {
+    margin-bottom: -1em;
+}
+
 #contact-container form {
     background-color: white;
     width: 50%;
