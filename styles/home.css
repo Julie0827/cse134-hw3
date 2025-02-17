@@ -83,3 +83,37 @@
     border-radius: 3em;
     box-shadow: var(--shadow-card, none);
 }
+
+
+@media (max-width: 600px) {
+    #main-page-container {
+        gap: 60px;
+    }
+
+    #main-page-intro-container {
+        flex-direction: column-reverse;
+    }
+
+    #main-page-image-container {
+        width: 70%;
+    }
+
+    #main-page-container hgroup {
+        width: 100%;
+    }
+
+    #project-thumbnail-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #project-thumbnail-container picture {
+        width: 80%;
+    }
+
+    #main-page-container button {
+        padding: 15px 20px;
+        font-size: 0.6em;
+    }
+}
