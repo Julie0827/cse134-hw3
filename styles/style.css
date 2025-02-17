@@ -70,23 +70,23 @@ header audio {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
 
-#main-nav>a.nav-link {
-    text-decoration: none;
-    color: var(--text-primary-color, black);
-    padding: 0.7em 1em;
-}
+    a.nav-link {
+        text-decoration: none;
+        color: var(--text-primary-color, black);
+        padding: 0.7em 1em;
 
-#main-nav>a.nav-link:hover {
-    background-color: white;
-    border-radius: 10em;
-    font-weight: bold;
-    color: var(--main-color, pink);
-}
+        &:hover {
+            background-color: white;
+            border-radius: 10em;
+            font-weight: bold;
+            color: var(--main-color, pink);
+        }
 
-#main-nav>a.nav-link:active {
-    transform: scale(0.9);
+        &:active {
+            transform: scale(0.9);
+        }
+    }
 }
 
 header search input {
