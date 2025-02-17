@@ -30,3 +30,22 @@
 #bio {
     width: 60%;
 }
+
+@media (max-width: 600px) {
+    #profile-container {
+        flex-direction: column;
+    }
+
+    #profile {
+        width: 60%;
+    }
+
+    #about-me-container h3 {
+        font-size: 1em;
+    }
+
+    #bio {
+        width: 100%;
+        margin-top: 50px;
+    }
+}
