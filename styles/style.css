@@ -6,10 +6,6 @@
     display: none;
 }
 
-/* * {
-    border: 1px solid red;
-} */
-
 h1 {
     font-size: 3.5rem;
 }
@@ -20,6 +16,10 @@ h2 {
 
 #hamburger-icon {
     display: none;
+}
+
+ul:has(a) {
+    list-style: none;
 }
 
 body {
@@ -99,7 +99,7 @@ header search input {
     background-size: 1.5em;
 }
 
-input, textarea {
+:is(input, textarea) {
     box-sizing: border-box;
     font-family: var(--font-input, Arial, sans-serif);
     font-size: 1em;
@@ -116,7 +116,6 @@ header search input:focus {
 footer ul {
     display: flex;
     justify-content: center;
-    list-style: none;
     gap: 2em;
     padding: 0;
 }
@@ -134,18 +133,18 @@ p {
     line-height: 1.5;
 }
 
-button, .top-btn {
+:is(button, .top-btn) {
     font-family: var(--font-button, 'Arial', sans-serif);
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
 }
 
-button:hover, .top-btn:hover, .repo-btn:hover {
+:is(button, .top-btn, .repo-btn):hover {
     transform: scale(1.05);
 }
 
-button:active, .top-btn:active, .repo-btn:active {
+:is(button, .top-btn, .repo-btn):active {
     transform: scale(0.95);
 }
 
@@ -313,10 +312,6 @@ button.btn:active {
         flex-direction: column;
         align-items: center;
         gap: 10px;
-    }
-    
-    #dropdown-menu li {
-        list-style: none;
     }
     
     #dropdown-menu li a {
